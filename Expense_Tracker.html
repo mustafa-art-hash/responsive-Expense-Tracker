@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="Expense_Tracker.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1> Expense Tracker</h1>
+
+    <h2 id="balance">Balance: $0</h2>
+
+    <div class="summary">
+      <p class="income">Income: $0</p>
+      <p class="expense">Expense: $0</p>
+    </div>
+
+    <input id="text" placeholder="Description">
+    <input id="amount" type="number" placeholder="Amount">
+
+    <button onclick="addTransaction()">Add</button>
+
+    <div class="filters">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('income')">Income</button>
+      <button onclick="setFilter('expense')">Expense</button>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src=" Expense_Tracker.js"></script>
+</body>
+</html>
